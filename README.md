@@ -16,6 +16,13 @@ Commands:
   help [command]  display help for command
 ```
 
+- Self-build
+  ```bash
+  pnpm install
+  pnpm run build
+  npm link
+  ```
+
 ## LICENSE
 
 MIT License
