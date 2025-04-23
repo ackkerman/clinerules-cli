@@ -1,0 +1,30 @@
+{
+  "name": "clinerules-cli",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "clinerules": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "copy-templates": "cpx 'src/templates/**/*' dist/templates"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.4.0"
+  }
+}
